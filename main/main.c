@@ -23,4 +23,7 @@ void app_main(void)
     register_nvs();
     ESP_ERROR_CHECK(esp_console_start_repl(repl));
 
+    console_remote_cfg tcp_conf = REMOTE_CLI_DEFAULT();
+    init_remote_cli(&tcp_conf);
+
 }
