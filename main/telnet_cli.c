@@ -160,7 +160,7 @@ void task_telnet_client(void *pvParameters){
         telnet_recv(telnet, telnet_buffer, received);
     }
 
-    ESP_LOGW(TAG, "Try close [%s]", path);
+    ESP_LOGD(TAG, "Try close [%s]", path);
 
     // Notify and unblock
     xTaskNotifyGive(cli_handle);
