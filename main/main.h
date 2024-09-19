@@ -17,6 +17,6 @@
 #include "cmd_wifi.h"
 
 #include "remote_cli.h"
-
+#include "vfs_pipe.h"
 
 void  wifi_init_sta();
